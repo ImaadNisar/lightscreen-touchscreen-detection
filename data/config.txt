@@ -1,0 +1,3 @@
+theme: light
+wsize: 1280
+hsize: 720
