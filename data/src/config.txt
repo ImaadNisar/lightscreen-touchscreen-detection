@@ -1,5 +1,0 @@
-theme: dark
-wsize: 1280
-hsize: 720
-startup: False
-minimizeToTray: False
