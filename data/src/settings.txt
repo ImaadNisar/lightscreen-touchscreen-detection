@@ -1,5 +1,5 @@
 theme: dark
-wsize: 1280
-hsize: 720
-startup: False
-minimizeToTray: False
+wsize: 1920
+hsize: 1080
+startup: True
+minimizeToTray: True
