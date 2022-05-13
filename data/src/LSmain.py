@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import LSconfiggui
+import popup
 import math
 
 def selectPoints():  # function for user to define corners of screen for warping
@@ -9,7 +9,7 @@ def selectPoints():  # function for user to define corners of screen for warping
     points = []
   
     cap = cv2.VideoCapture(0)  # init webcam capture
-    LSconfiggui.popUp("Select points","To calibrate, please select the corners of your screen \n\n Press 'ENTER' to save config or 'R' to reset points", 1)
+    popup.popUp("Select points","To calibrate, please select the corners of your screen \n\n Press 'ENTER' to save config or 'R' to reset points", 1)
 
     check, frame = cap.read()
     cv2.imshow("Calibration", frame)
@@ -94,7 +94,7 @@ def maskImage(cap, mat):
         hsvimg = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
         if not selected:
-            auto = LSconfiggui.popUp("Select a masking method", "Would you like to automatically generate a mask.\nIf you want to manually configure your mask, Press 'No'. If unsure, automatic mask generation is recommended", 2)
+            auto = popup.popUp("Select a masking method", "Would you like to automatically generate a mask.\nIf you want to manually configure your mask, Press 'No'. If unsure, automatic mask generation is recommended", 2)
             if not auto:
                 n = "Create Mask"
                 cv2.namedWindow(n)
@@ -105,7 +105,7 @@ def maskImage(cap, mat):
                 cv2.createTrackbar("Upper H", n, 255, 255, noFunc)
                 cv2.createTrackbar("Upper S", n, 255, 255, noFunc)
                 cv2.createTrackbar("Upper V", n, 255, 255, noFunc)
-                LSconfiggui.popUp("Info", "Press 'ENTER' to save the mask.\nFor more info on how to create a manual mask, visit WEBSITE LINK.", 1)  # add hyperlink 
+                popup.popUp("Info", "Press 'ENTER' to save the mask.\nFor more info on how to create a manual mask, visit WEBSITE LINK.", 1)  # add hyperlink 
             selected = True
 
         if not saved:
