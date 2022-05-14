@@ -30,3 +30,8 @@ def popUp(title, txt, type):
         messagebox.showinfo(title, txt)
     else:
         return messagebox.askyesno(title, txt)
+
+def warning(title, txt):
+    root = tk.Tk()
+    root.withdraw()
+    messagebox.showerror(title, txt)
