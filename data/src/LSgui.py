@@ -1,5 +1,5 @@
 import tkinter as tk
-from LScalibrate import selectPoints
+from LScalibratepoints import selectPoints
 from LStrack import start
 from PIL import Image, ImageTk
 import webbrowser
@@ -12,10 +12,10 @@ def mainWin():
     config, default, startup, minimizeToTray = validateFiles()
     root = tk.Tk()
 
-    if minimizeToTray.lower() == "true":
+    if minimizeToTray.lower() == "true" and system() == "Windows":
         root.protocol("WM_DELETE_WINDOW", lambda: LSsharedmodules.minToTray(root))
     else:
-        root.protocol("WM_DELETE_WINDOW", lambda: LSsharedmodules.quitProgram(root))
+        root.protocol("WM_DELETE_WINDOW", lambda: LSsharedmodules.quit(root))
 
     root.geometry("1280x720")
     root.title("Lightscreen")
@@ -61,13 +61,13 @@ def mainWin():
 
     start = tk.Button(sidebar, text=">> START", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, cursor="hand2", highlightthickness=0, command=lambda: startTracking(root))
     
-    calibration = tk.Button(sidebar, text=">> CALIBRATION", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, padx=50, cursor="hand2", command=lambda: startCalibration(main, color), highlightthickness=0)
+    calibration = tk.Button(sidebar, text=">> CALIBRATE POINTS", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, padx=50, cursor="hand2", command=lambda: startCalibration(main, color), highlightthickness=0)
+
 
     settings = tk.Button(sidebar, text=">> SETTINGS", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, cursor="hand2", command=lambda: viewSettings(main, color, config, default), highlightthickness=0)
 
     howtouse = tk.Button(sidebar, text=">> HOW TO USE", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, padx=50, cursor="hand2", command=lambda: webbrowser.open("https://www.google.com"), highlightthickness=0)
 
-    testitout = tk.Button(sidebar, text=">> TEST IT OUT", fg=color["t"], font=btnfont, bg=color["p"], borderwidth=0, padx=50, cursor="hand2", command=lambda: webbrowser.open("https://www.google.com"), highlightthickness=0)
 
     bottomleft = tk.Frame(root, bg=color["p"])
     bottomright= tk.Frame(root, bg=color["s"])
@@ -78,10 +78,10 @@ def mainWin():
     span.grid(row=0, column=0, padx=20, pady=20)
     start.grid(row=1, column=0, sticky="ew", pady=30)
     calibration.grid(row=2, column=0, sticky="ew", pady=10)
-    settings.grid(row=3, column=0, sticky="ew", pady=30)
-    howtouse.grid(row=4, column=0, sticky="ew", pady=10)
-    credit.grid(row=5, column=0, sticky="sw", padx=(3,0))
-    version.grid(row=5, column=0, sticky="se", padx=(375,0))
+    settings.grid(row=4, column=0, sticky="ew", pady=30)
+    howtouse.grid(row=5, column=0, sticky="ew", pady=10)
+    credit.grid(row=6, column=0, sticky="sw", padx=(3,0))
+    version.grid(row=6, column=0, sticky="se", padx=(375,0))
     bottomleft.grid(row=1, column=0, sticky="nsew")
     bottomright.grid(row=1, column=1, sticky="nsew")
 
@@ -191,10 +191,11 @@ def viewSettings(main, color, config, default):
     wtxt = tk.Entry(resFrm, width=10, bg=color["s"], font=font, fg=color["t"], highlightthickness=0, borderwidth=2, relief="groove")
     hlbl = tk.Label(resFrm, text="Height:", bg=color["s"], font=font, fg=color["t"], highlightthickness=0)
     htxt = tk.Entry(resFrm, width=10, bg=color["s"], font=font, fg=color["t"], highlightthickness=0, borderwidth=2, relief="groove")
-    resBtn = tk.Button(resFrm, command=lambda: showRes(wlbl, wtxt, hlbl, htxt, save), text="Change resolution", font=font, bg=color["s"], fg=color["t"], relief="groove", borderwidth=2, highlightthickness=1, cursor="hand2")
+    resBtn = tk.Button(resFrm, command=lambda: showRes(wlbl, wtxt, hlbl, htxt, save), text="Change resolution", font=font, bg=color["s"], fg=color["t"], relief="groove", borderwidth=2, highlightthickness=0, cursor="hand2")
     
     setValues(config, themeChk, startupChk, minTrayChk, wtxt, htxt)
 
+    buttonFrame = tk.Frame(mainContent)
 
 
     img = Image.open("data/images/save.png")
@@ -252,7 +253,7 @@ def setValues(config, themeChk, startupChk, minTrayChk, wtxt, htxt):
 
 
 def enableSave(save):
-    save.grid(row=5, column=1, sticky="e", ipadx=20, ipady=10, padx=(50, 0), pady=(130, 0))
+    save.grid(row=5, column=1, sticky="e", ipadx=20, ipady=10, padx=(40, 0), pady=(130, 0))
 
 
 def onSave(btn, darkMode, startup, minTray, wvar, hvar):
