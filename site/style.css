@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+}
