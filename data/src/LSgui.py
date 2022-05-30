@@ -385,7 +385,7 @@ def howToUse(main, color):
     img2 = Image.open("data\images\lightscreen.png")
     resized = img2.resize((256, 256), Image.ANTIALIAS)
     image2 = ImageTk.PhotoImage(resized)
-    websitebtn = tk.Button(main, image=image2, bg=color["s"], activebackground=color["s"], borderwidth=0, highlightthickness=0, cursor="hand2", command=lambda: webbrowser.open("https://imaadnisar.github.io/Lightscreen-Touchscreen-Detection/"))
+    websitebtn = tk.Button(main, image=image2, bg=color["s"], activebackground=color["s"], borderwidth=0, highlightthickness=0, cursor="hand2", command=lambda: webbrowser.open("https://lsbyimaadnisar.w3spaces.com/"))
     websitebtn.image = image2
 
     githubbtn.grid(column=0, row=0, padx=(120, 0), ipadx=5, ipady=5)
