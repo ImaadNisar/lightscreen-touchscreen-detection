@@ -1,0 +1,334 @@
+body {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
+    
+}
+
+header {
+    width: 100%;
+    color: whitesmoke;
+    position: relative;
+    height: 100px;
+}
+
+.icon {
+    display: inline;
+}
+.navbar {
+    height: 100%;
+    margin: 0;
+    float: right;
+    cursor: pointer;
+}
+
+
+header nav img {
+    display: inline;
+}
+
+.topcolor {
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+
+
+.titleanimation img {
+    width: 50em;
+    margin: 80px auto;
+    display: block;
+}
+
+.navbar div {
+    display: inline-block;
+    position: relative;
+    padding: 25px 15px 25px 15px;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+.color1 {
+    background-color: #27282c;
+}
+.width1 {
+    width: 78em;
+    margin: auto;
+}
+
+.navbar div:hover {
+    animation-name: highlightbtn;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+} 
+
+@keyframes highlightbtn {
+    100% {
+        color: whitesmoke;
+    }
+}
+
+main .topcolor .intro {
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    font-size: 24px;
+}
+
+
+
+.tiles .tile1  {
+    border-radius: 20px;
+    background: linear-gradient(25deg, #7598ff, #e875fa);
+    height: 700px;
+    width: 54%;
+    padding: 40px 30px 40px 50px;
+    margin: 0 0 100px 10px;
+    float: left;
+    background-color: #663eae;
+    background-image: url(tile1.png);
+
+}
+
+
+
+
+.anim1  {animation: animation1 1.3s}
+.anim2 {animation: animation1 0.9s}
+.anim3 {animation: animation1 1.7s}
+
+
+@keyframes animation1 {
+    from {
+        opacity: 0;
+        transform: translate(0px, 30px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0)
+
+    }
+}
+
+
+
+
+.tiles .sidetiles {
+    width: 25%;
+    height: 700px;
+    float: right;
+    margin-right: 150px;
+}
+
+.sidetiles article {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(25deg, #7598ff, #e875fa);
+    height: 300px;
+    padding: 40px;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+    
+}
+
+
+.sidetiles h1 {
+    margin: 0;
+}
+
+.tiles article {
+    box-shadow: 3px 3px 15px 1px rgb(15, 15, 15);
+}
+
+
+
+.tiles .tile2 {
+    background-color: #f37d12;
+    background-image: url(tile2.png);
+}
+
+.tiles .tile3 {
+    background-color: #3d63a0;
+    background-image: url(tile3.png);
+}
+
+.tiles article:hover {
+    cursor: pointer;
+    animation-name: hovertile;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+} 
+
+.tiles article:not(:hover) {
+    animation-name: nothovertile;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+} 
+
+
+@keyframes hovertile {
+    100% {
+        transform: scale(1.009);
+    }
+}
+
+@keyframes nothovertile {
+    100% {
+        transform: scale(0.99) 
+    }
+}
+
+.tiles article h1 {
+    font-weight: 700;
+    width: 500px
+}
+
+.tiles .tile1 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.tiles .tile1 p{
+    font-size: 25px;
+    width: 450px;
+    margin-top: 0;
+}
+
+
+.tiles a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.tiles p {
+    font-weight: 400;
+}
+
+.tiles span {
+    padding: 10px 25px 10px 25px;
+    border-radius: 100px;
+    font-weight: 700;
+}
+
+.tile1btn {
+    color: #673fb1;
+    position: relative;
+    top: 305px;
+    border: 1px solid #673fb1;
+}
+
+.sidetiles h1 {
+    font-size: 22px;
+}
+
+.tile2 p {
+    width: 250px;
+}
+
+.tile2btn {
+    border: 1px solid #ffffff;
+    top: 80px;
+    position: relative;
+}
+
+.sidetiles h1 {
+    padding-top: 20px
+}
+
+.tile3 p {
+    width: 270px;
+}
+
+.tile3btn {
+    border: 1px solid #ffffff;
+    top: 100px;
+    position: relative;
+}
+.width2 {
+    width: 78em;
+    margin: auto;
+}
+
+.color2 {
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+.links h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+} 
+
+.links article {
+    display: inline-block;
+    padding: 100px 5px 100px 5px;
+    width: 24%
+}
+
+.links p {
+    color: #808080;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    width: 70%;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #3198ff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.links a:hover {
+    border-bottom: 3px solid #3198ff;
+}
+
+footer {
+    background-color: whitesmoke;
+    
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer .bottomtxt p {
+    text-align: center;
+    color: #a8a8a8;
+    margin: 10px 0 100px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .icons li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+footer .icons {
+    margin: auto;
+    text-align: center;
+}
+
+footer .icons img:hover {
+    cursor: pointer;
+
+}
+
