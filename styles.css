@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     font-family: "Poppins", sans-serif;
@@ -90,7 +94,7 @@ main .topcolor .intro {
     margin: 0 0 100px 10px;
     float: left;
     background-color: #663eae;
-    background-image: url(tile1.png);
+    background-image: url(images/tile1.png);
 
 }
 
@@ -149,12 +153,12 @@ main .topcolor .intro {
 
 .tiles .tile2 {
     background-color: #f37d12;
-    background-image: url(tile2.png);
+    background-image: url(images/tile2.png);
 }
 
 .tiles .tile3 {
     background-color: #3d63a0;
-    background-image: url(tile3.png);
+    background-image: url(images/tile3.png);
 }
 
 .tiles article:hover {
@@ -260,7 +264,7 @@ main .topcolor .intro {
 }
 
 .color2 {
-    background-color: rgb(245, 245, 245);
+    background-color: whitesmoke;
 }
 
 
@@ -273,7 +277,7 @@ main .topcolor .intro {
 
 .links article {
     display: inline-block;
-    padding: 100px 5px 100px 5px;
+    padding: 100px 5px 0 5px;
     width: 24%
 }
 
@@ -299,7 +303,7 @@ main .topcolor .intro {
 
 footer {
     background-color: whitesmoke;
-    
+    margin-top: 100px;
 }
 
 footer ul {
@@ -309,7 +313,7 @@ footer ul {
 footer .bottomtxt p {
     text-align: center;
     color: #a8a8a8;
-    margin: 10px 0 100px 0;
+    margin: 10px 0 50px 0;
 }
 
 footer ul {
@@ -332,3 +336,556 @@ footer .icons img:hover {
 
 }
 
+
+.downloadarea {
+    text-align: center;
+    padding: 70px 0 100px 0;
+}
+
+.downloadarea h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #3198ff
+}
+
+.downloadarea .downloadbtn {
+    color: white;
+    display: inline-block;
+    padding: 15px 40px 15px 40px;
+    border-radius:100px;;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px 1px #1a1a1a;
+}
+
+.downloadarea .downloadbtn:hover {
+    animation: downloadanimation 0.2s forwards
+    
+}
+
+.downloadarea .downloadbtn:not(hover) {
+    animation: nothoverdownload 0.2s forwards
+}
+
+
+
+@keyframes nothoverdownload {
+    from {background-color: #2b7cce; padding: 15px 50px 15px 50px;}
+    to {background-color: #3198ff; padding: 15px 40px 15px 40px;}
+}
+
+@keyframes downloadanimation {
+    from {background-color: #3198ff; padding: 15px 40px 15px 40px;}
+    to {background-color: #2b7cce; padding: 15px 50px 15px 50px;}
+}
+
+
+.downloadarea p {
+    color: #808080;
+    font-weight: 400;
+}
+.downloadarea p a {
+    font-weight: 600;
+}
+.downloadarea p a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+.requirementstitle {
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.requirementstitle h2 {
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0
+}
+
+.requirementstitle h3 {
+    font-weight: 300;
+    margin: 20px;
+    color: #808080;
+}
+
+.width2 div h4 {
+    font-size: 38px;
+    font-weight: 200;
+    margin: 20px 0 30px 0
+}
+
+
+
+.software {
+    padding: 50px 0 0 0;
+}
+
+
+.software div {
+    display: inline-block;
+}
+
+.width2 div div:not(.btn) {
+    margin: 0 0 0 70px;
+}
+
+.width2 div h5 a{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+
+.pip {
+    font-family: 'Source Code Pro',sans-serif;
+    font-size: 25px;
+    color: #808080;
+    display: inline-block;
+    width: 50%;
+    margin: 0 !important;
+    
+}
+
+.names {
+    display: inline-block;
+    width: 12%
+}
+
+.pip div h5 {
+    margin: 0 0 44px 0;
+    font-weight: 500 !important;
+    padding: 10px;
+    background-color: #6098ff;
+    color: white;
+    border: 2px dotted #696969;
+    display: inline-block
+}
+
+.names h5 {
+    margin: 0;
+    line-height: 107px;
+}
+
+.names a {
+    display: inline;
+
+}
+.names a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+.python h5 a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+
+.names a h5 {
+    width: 100%
+}
+
+.copy {
+    background-color: #6098ff;
+    position: relative;
+    display: block;
+    border: 2px dotted #696969;
+    border-left: none !important;
+    background-repeat: no-repeat;
+    background-image: url(images/copy.svg);
+    width: 50px;
+    height: 46px;
+    /*top: 17.8px;
+    right: 15px;*/
+    background-position: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.copy:hover{
+    animation: copyforwards 0.2s forwards;
+}
+
+.copy:not(:hover) {
+    animation: copybackwards 0.2s forwards
+}
+
+@keyframes copyforwards {
+    from {background-color: #6098ff}
+    to {background-color: #4e8cff}
+}
+
+@keyframes copybackwards {
+    from {background-color: #4e8cff}
+    to {background-color: #6098ff}
+}
+
+.pip div {
+    position: relative;
+}
+
+
+.tt {
+    position: absolute;
+    font-size: 12px;
+    width: 60px;
+    top: 3px;
+    left: 60px;
+    background-color: #000000c5;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    display: block;
+    visibility: hidden;
+
+}
+
+
+.cs {
+    display: inline-block;
+    margin: 0 !important;
+    position: relative;
+    width: 50px;
+    top: 17.8px;
+}
+
+.copy1:hover .tooltiptext1 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy2:hover .tooltiptext2 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy3:hover .tooltiptext3 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy4:hover .tooltiptext4 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy5:hover .tooltiptext5 {
+    animation: ttanimf 0.2s forwards;
+}
+
+@keyframes ttanimf {
+    from {visibility: hidden; opacity: 0;}
+    to {visibility: visible; opacity: 1;}
+}
+
+.copy .tt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000000c5 transparent transparent;
+  }
+
+
+.modules {
+    padding-bottom: 60px;
+}
+
+.backgroundimage {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: 95% 40%;
+    background-size: 40%;
+}
+
+.bottommargin {
+    padding: 100px 0 0 0;
+}
+
+.installtitle {
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.list {
+    padding: 15px;
+    width: 50%
+}
+
+.list li {
+    color: #808080;
+    font-size: 22px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.downloadarea {animation: animation1 0.5s ease-out forwards;}
+
+.requirements {    animation: animation1 0.8s ease-out forwards;}
+
+.listgithublink {font-weight: 500; }
+.listgithublink:hover {border-bottom: 3px solid #3198ff;}
+
+.tilebtn:hover {animation: tilebtnanimf 0.2s forwards;}
+.tilebtn:not(:hover) {animation: tilebtnanimb 0.2s forwards;}
+
+@keyframes tilebtnanimf {
+    from {background-color: none;}
+    to {background-color: rgba(0, 0, 0, 0.144);}
+}
+@keyframes tilebtnanimb {
+    from {background-color: rgba(0, 0, 0, 0.144);}
+    to {background-color: none;}
+}
+
+.image {
+    box-shadow: 3px 3px 30px 1px black;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+.learnmoresection1 {
+    text-align: center;
+}
+
+.circles {
+    display: inline-block;
+    margin: auto;
+    height: 50px;
+}
+.c {
+    margin: 20px 10px 75px 10px;
+    display: inline-block;
+    height: 10px;
+    background-color: #808080;
+    transition: background-color 1s ease-in-out;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.learnmoresection1 h1 {
+    color: white;
+    font-size: 62px;
+    font-weight: 500;
+    margin-top: 90px;
+}
+
+.imghover:hover {
+    animation: imghoveranim 1s forwards
+}
+
+.images {
+    position: relative;
+    height: 640px;
+    width: 1000px;
+    margin: auto;
+}
+
+.fadeout {animation: fadeout 1s forwards}
+@keyframes fadeout {
+    from {opacity: 1};
+    to {opacity: 0};
+}
+
+#img1 {
+    z-index: 5
+}
+
+.blacktitle {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.howitworks .tile {
+    display: inline-block;
+    width: 23%;
+    height: 290px;
+    border-radius: 15px;
+    background-color: #2b7cce;
+    margin: 0 33px 0 0 !important;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.575);
+    word-wrap: break-word;
+    position: relative;
+}
+.howitworks {
+    white-space: nowrap;
+    padding-bottom: 70px;
+}
+
+.hiwtile1 {background-image: url(images/lmtile1.png); background-size: 300px;}
+.hiwtile2 {background-image: url(images/lmtile2.png); background-size: 300px; top: 22px}
+.hiwtile3 {background-image: url(images/lmtile3.png); background-size: 300px;  top: 45px}
+.hiwtile4 {background-image: url(images/lmtile4.png); background-size: 300px;  top: 22px}
+
+.tile h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 0 0 30px;
+    cursor: default
+}
+
+.tile:hover {animation: hovertile 0.1s forwards}
+.tile:not(:hover) {animation: nothovertile 0.1s forwards}
+
+.tiletext {
+    color: #808080;
+    font-weight: 500;
+    margin-left: 30px;
+    width: 80%;
+    white-space: normal;
+    cursor: default
+}
+
+.circle {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 70px 0 0 0  !important;
+    background: radial-gradient(circle at 33px 33px, #7000c6, #000);
+    box-shadow: 3px 3px 10px 1px #0000008c;
+    animation: ball 10s infinite ease-in-out;
+    }
+
+.circleface {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(images/ballface.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    z-index: 5;
+}
+
+@keyframes ball {
+    50% {transform: translate(72em, 0) rotate(-50deg) scale(1.2); }
+    100% {transform: translate(0em, 0);}
+}
+
+
+.themetitle {
+    text-align: center;
+    padding: 70px 0 50px 0;
+    font-size: 46px;
+    font-weight: 300;
+    color: white
+}
+
+.theme {
+    position: absolute;
+    display: inline-block;
+    height: 538px;
+    width: 479px;
+    
+}
+
+.themeheight {
+    height: 850px
+}
+
+.themes{
+    position: relative;
+    width: 958px;
+    height: 538px;
+    margin: auto;
+    box-shadow: 3px 3px 30px 1px #0000009a;
+}
+.theme img {
+    position: absolute;
+    
+}
+
+.lighttheme img {
+    clip: rect(0px, 479px, 538px, 0px)
+}
+
+.darktheme img {
+    clip: rect(0px, 958px, 538px, 479px)
+}
+
+.darktheme {
+    width: 958px !important;
+    z-index: 1;
+    transition: 0.3s ease
+
+}
+
+.lighttheme {
+    z-index: 2;
+    transition: 0.3s ease
+}
+
+.lighttheme:hover {
+    transform: scale(1.02);
+}
+.darktheme:hover {
+    transform: scale(1.02);
+}
+
+b {
+    font-weight: 600;
+}
+
+.masktiles .t {
+    display: inline-block;
+    height: 300px;
+    width: 40%;
+    white-space: nowrap;
+    border-radius: 20px;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 10px 1px #0000006c;
+}
+
+.masktiles {
+    position: relative;
+    margin: 0 !important;
+}
+
+.masktile2 {
+    float: right;
+    margin: 0 70px 0 0 !important;
+    background-image: url(images/masktile2.png);
+    
+}
+
+.masktile1 {
+    margin: 0 0 0 70px !important;
+    background-image: url(images/masktile1.png);
+}
+
+.t p {
+    white-space: normal;
+    width: 90%;
+    margin-left: 30px;
+    color: white;
+}
+
+.t h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+.moreinfo1 {
+    margin: 0 0 0 70px !important;
+    background-image: url(images/masktile1.png);
+}
+.moreinfo2 {
+    float: right;
+    margin: 0 70px 0 0 !important;
+    background-image: url(images/masktile2.png);
+}
