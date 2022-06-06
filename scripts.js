@@ -22,6 +22,10 @@ function func(command) {
         var x = document.getElementById("t5");
         const btn = document.getElementById("copy5");
     }
+    if (command=="pip6") {
+        var x = document.getElementById("t6");
+        const btn = document.getElementById("copy6");
+    }
     
 
     x.innerText = "Copied";

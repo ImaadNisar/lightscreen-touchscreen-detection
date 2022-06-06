@@ -569,6 +569,9 @@ a {
 .copy5:hover .tooltiptext5 {
     animation: ttanimf 0.2s forwards;
 }
+.copy6:hover .tooltiptext6 {
+    animation: ttanimf 0.2s forwards;
+}
 
 @keyframes ttanimf {
     from {visibility: hidden; opacity: 0;}
