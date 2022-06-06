@@ -5,8 +5,11 @@ from PIL import Image, ImageTk
 import webbrowser  # used to open webpage
 from platform import system # used to identify os
 import LSsharedmodules
+from pyglet import font
+
 
 def mainWin():
+    font.add_file("data\src\RobotoMono-Light.ttf")
     version = "v1.0"
     config, default, startup, minimizeToTray = validateFiles()  # obtains values from files
     root = tk.Tk()
@@ -385,7 +388,7 @@ def howToUse(main, color):
     img2 = Image.open("data\images\lightscreen.png")
     resized = img2.resize((256, 256), Image.ANTIALIAS)
     image2 = ImageTk.PhotoImage(resized)
-    websitebtn = tk.Button(main, image=image2, bg=color["s"], activebackground=color["s"], borderwidth=0, highlightthickness=0, cursor="hand2", command=lambda: webbrowser.open("https://lsbyimaadnisar.w3spaces.com/"))
+    websitebtn = tk.Button(main, image=image2, bg=color["s"], activebackground=color["s"], borderwidth=0, highlightthickness=0, cursor="hand2", command=lambda: webbrowser.open("https://imaadnisar.github.io/Lightscreen-Touchscreen-Detection/index.html"))
     websitebtn.image = image2
 
     githubbtn.grid(column=0, row=0, padx=(120, 0), ipadx=5, ipady=5)
