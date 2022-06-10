@@ -442,7 +442,7 @@ a {
 
 
 .pip {
-    font-family: 'Source Code Pro',sans-serif;
+    font-family: 'Source Code Pro',monospace;
     font-size: 25px;
     color: #808080;
     display: inline-block;
@@ -597,7 +597,7 @@ a {
 .backgroundimage {
     background-image: url(images/background.png);
     background-repeat: no-repeat;
-    background-position: 95% 40%;
+    background-position: 95% 50%;
     background-size: 40%;
 }
 
@@ -701,31 +701,45 @@ a {
 
 .blacktitle {
     text-align: center;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 10px 0;
     font-size: 46px;
     font-weight: 300;
+    margin: 0
 }
 
-.howitworks .tile {
+.lmcontainer .tile {
     display: inline-block;
     width: 23%;
     height: 290px;
     border-radius: 15px;
-    background-color: #2b7cce;
+    background-color: #27282c;
     margin: 0 33px 0 0 !important;
     box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.575);
     word-wrap: break-word;
     position: relative;
 }
-.howitworks {
+.lmcontainer {
     white-space: nowrap;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .hiwtile1 {background-image: url(images/lmtile1.png); background-size: 300px;}
-.hiwtile2 {background-image: url(images/lmtile2.png); background-size: 300px; top: 22px}
-.hiwtile3 {background-image: url(images/lmtile3.png); background-size: 300px;  top: 45px}
-.hiwtile4 {background-image: url(images/lmtile4.png); background-size: 300px;  top: 22px}
+.hiwtile2 {background-image: url(images/lmtile2.png); background-size: 300px;}
+.hiwtile3 {background-image: url(images/lmtile3.png); background-size: 300px; }
+.hiwtile4 {background-image: url(images/lmtile4.png); background-size: 300px; }
+
+.wyntile1 {background-image: url(images/lmtile1.png); background-size: 300px;}
+.wyntile2 {background-image: url(images/lmtile2.png); background-size: 300px;}
+.wyntile3 {background-image: url(images/lmtile3.png); background-size: 300px; }
+.wyntile4 {background-image: url(images/lmtile4.png); background-size: 300px; }
+
+.howitworks .tile {
+    vertical-align: top;
+}
+
+.whatyouneed .tile {
+    vertical-align: top;
+}
 
 .tile h3 {
     color: white;
@@ -744,7 +758,7 @@ a {
     margin-left: 30px;
     width: 80%;
     white-space: normal;
-    cursor: default
+    cursor: default;
 }
 
 .circle {
@@ -839,7 +853,7 @@ b {
     font-weight: 600;
 }
 
-.masktiles .t {
+.moretiles .t {
     display: inline-block;
     height: 300px;
     width: 40%;
@@ -848,22 +862,25 @@ b {
     background-size: 101%;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 10px 1px #0000006c;
+    cursor: default;
+    transition: 0.2s ease;
 }
 
-.masktiles {
+.t:hover {
+    transform: scale(1.01)
+}
+
+.moretiles {
     position: relative;
     margin: 0 !important;
 }
 
 .masktile2 {
-    float: right;
-    margin: 0 70px 0 0 !important;
     background-image: url(images/masktile2.png);
     
 }
 
 .masktile1 {
-    margin: 0 0 0 70px !important;
     background-image: url(images/masktile1.png);
 }
 
@@ -882,13 +899,73 @@ b {
 
 }
 
-
-.moreinfo1 {
+.t1 {
     margin: 0 0 0 70px !important;
-    background-image: url(images/masktile1.png);
 }
-.moreinfo2 {
+
+.t2 {
     float: right;
     margin: 0 70px 0 0 !important;
-    background-image: url(images/masktile2.png);
+}
+
+.dualtile1 {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.dualtile2 {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.dualtitle {
+    margin: auto;
+    text-align: center;
+    padding: 70px 0 0 0;
+    font-weight: 500;
+    font-size: 52px;
+}
+
+.dualsubtitle {
+    text-align: center;
+    padding: 50px 0 0px 0;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1320px) {
+    .windex {
+        width: 60em
+    }
+    .pip {
+        width: 80%
+    }
+    .tiles .tile1 {
+        width: 48%
+    }
+    .sidetiles article {
+        width: 120%
+    }
+    .links article {
+        width: 23%;
+        margin-left: 9px;
+    }
+    .wget1 {
+        width: 60em
+    }
+    .wget2 {
+        width: 100%;
+    }
+    .wget3 {
+        width: 60em;
+    }
+    .wlearn1 {
+        width: 60em;
+    }
+    .learnmoresection1 .images {
+        width: 100%;
+    }
+    .learnmoresection1 .images img {
+        width: 100%;
+        height: 614px;
+    }
+    
 }
