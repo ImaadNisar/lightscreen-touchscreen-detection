@@ -1,0 +1,971 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
+    
+}
+
+header {
+    width: 100%;
+    color: whitesmoke;
+    position: relative;
+    height: 100px;
+}
+
+.icon {
+    display: inline;
+}
+.navbar {
+    height: 100%;
+    margin: 0;
+    float: right;
+    cursor: pointer;
+}
+
+
+header nav img {
+    display: inline;
+}
+
+.topcolor {
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+
+
+.titleanimation img {
+    width: 50em;
+    margin: 80px auto;
+    display: block;
+}
+
+.navbar div {
+    display: inline-block;
+    position: relative;
+    padding: 25px 15px 25px 15px;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+.color1 {
+    background-color: #27282c;
+}
+.width1 {
+    width: 78em;
+    margin: auto;
+}
+
+.navbar div:hover {
+    animation-name: highlightbtn;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+} 
+
+@keyframes highlightbtn {
+    100% {
+        color: whitesmoke;
+    }
+}
+
+main .topcolor .intro {
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    font-size: 24px;
+}
+
+
+
+.tiles .tile1  {
+    border-radius: 20px;
+    background: linear-gradient(25deg, #7598ff, #e875fa);
+    height: 700px;
+    width: 54%;
+    padding: 40px 30px 40px 50px;
+    margin: 0 0 100px 10px;
+    float: left;
+    background-color: #663eae;
+    background-image: url(images/tile1.png);
+
+}
+
+
+
+
+.anim1  {animation: animation1 1.3s}
+.anim2 {animation: animation1 0.9s}
+.anim3 {animation: animation1 1.7s}
+
+
+@keyframes animation1 {
+    from {
+        opacity: 0;
+        transform: translate(0px, 30px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0)
+
+    }
+}
+
+
+
+
+.tiles .sidetiles {
+    width: 25%;
+    height: 700px;
+    float: right;
+    margin-right: 150px;
+}
+
+.sidetiles article {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(25deg, #7598ff, #e875fa);
+    height: 300px;
+    padding: 40px;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+    
+}
+
+
+.sidetiles h1 {
+    margin: 0;
+}
+
+.tiles article {
+    box-shadow: 3px 3px 15px 1px rgb(15, 15, 15);
+}
+
+
+
+.tiles .tile2 {
+    background-color: #f37d12;
+    background-image: url(images/tile2.png);
+}
+
+.tiles .tile3 {
+    background-color: #3d63a0;
+    background-image: url(images/tile3.png);
+}
+
+.tiles article:hover {
+    cursor: pointer;
+    animation-name: hovertile;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+} 
+
+.tiles article:not(:hover) {
+    animation-name: nothovertile;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+} 
+
+
+@keyframes hovertile {
+    100% {
+        transform: scale(1.009);
+    }
+}
+
+@keyframes nothovertile {
+    100% {
+        transform: scale(0.99) 
+    }
+}
+
+.tiles article h1 {
+    font-weight: 700;
+    width: 500px
+}
+
+.tiles .tile1 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.tiles .tile1 p{
+    font-size: 25px;
+    width: 450px;
+    margin-top: 0;
+}
+
+
+.tiles a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.tiles p {
+    font-weight: 400;
+}
+
+.tiles span {
+    padding: 10px 25px 10px 25px;
+    border-radius: 100px;
+    font-weight: 700;
+}
+
+.tile1btn {
+    color: #673fb1;
+    position: relative;
+    top: 305px;
+    border: 1px solid #673fb1;
+}
+
+.sidetiles h1 {
+    font-size: 22px;
+}
+
+.tile2 p {
+    width: 250px;
+}
+
+.tile2btn {
+    border: 1px solid #ffffff;
+    top: 80px;
+    position: relative;
+}
+
+.sidetiles h1 {
+    padding-top: 20px
+}
+
+.tile3 p {
+    width: 270px;
+}
+
+.tile3btn {
+    border: 1px solid #ffffff;
+    top: 100px;
+    position: relative;
+}
+.width2 {
+    width: 78em;
+    margin: auto;
+}
+
+.color2 {
+    background-color: whitesmoke;
+}
+
+
+
+.links h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+} 
+
+.links article {
+    display: inline-block;
+    padding: 100px 5px 0 5px;
+    width: 24%
+}
+
+.links p {
+    color: #808080;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    width: 70%;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #3198ff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.links a:hover {
+    border-bottom: 3px solid #3198ff;
+}
+
+footer {
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer .bottomtxt p {
+    text-align: center;
+    color: #a8a8a8;
+    margin: 10px 0 50px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .icons li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+footer .icons {
+    margin: auto;
+    text-align: center;
+}
+
+footer .icons img:hover {
+    cursor: pointer;
+
+}
+
+
+.downloadarea {
+    text-align: center;
+    padding: 70px 0 100px 0;
+}
+
+.downloadarea h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #3198ff
+}
+
+.downloadarea .downloadbtn {
+    color: white;
+    display: inline-block;
+    padding: 15px 40px 15px 40px;
+    border-radius:100px;;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px 1px #1a1a1a;
+}
+
+.downloadarea .downloadbtn:hover {
+    animation: downloadanimation 0.2s forwards
+    
+}
+
+.downloadarea .downloadbtn:not(hover) {
+    animation: nothoverdownload 0.2s forwards
+}
+
+
+
+@keyframes nothoverdownload {
+    from {background-color: #2b7cce; padding: 15px 50px 15px 50px;}
+    to {background-color: #3198ff; padding: 15px 40px 15px 40px;}
+}
+
+@keyframes downloadanimation {
+    from {background-color: #3198ff; padding: 15px 40px 15px 40px;}
+    to {background-color: #2b7cce; padding: 15px 50px 15px 50px;}
+}
+
+
+.downloadarea p {
+    color: #808080;
+    font-weight: 400;
+}
+.downloadarea p a {
+    font-weight: 600;
+}
+.downloadarea p a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+.requirementstitle {
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.requirementstitle h2 {
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0
+}
+
+.requirementstitle h3 {
+    font-weight: 300;
+    margin: 20px;
+    color: #808080;
+}
+
+.width2 div h4 {
+    font-size: 38px;
+    font-weight: 200;
+    margin: 20px 0 30px 0
+}
+
+
+
+.software {
+    padding: 50px 0 0 0;
+}
+
+
+.software div {
+    display: inline-block;
+}
+
+.width2 div div:not(.btn) {
+    margin: 0 0 0 70px;
+}
+
+.width2 div h5 a{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+
+.pip {
+    font-family: 'Source Code Pro',monospace;
+    font-size: 25px;
+    color: #808080;
+    display: inline-block;
+    width: 50%;
+    margin: 0 !important;
+    
+}
+
+.names {
+    display: inline-block;
+    width: 12%
+}
+
+.pip div h5 {
+    margin: 0 0 44px 0;
+    font-weight: 500 !important;
+    padding: 10px;
+    background-color: #6098ff;
+    color: white;
+    border: 2px dotted #696969;
+    display: inline-block
+}
+
+.names h5 {
+    margin: 0;
+    line-height: 107px;
+}
+
+.names a {
+    display: inline;
+
+}
+.names a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+.python h5 a:hover {
+    border-bottom: 2px solid #3198ff;
+}
+
+
+.names a h5 {
+    width: 100%
+}
+
+.copy {
+    background-color: #6098ff;
+    position: relative;
+    display: block;
+    border: 2px dotted #696969;
+    border-left: none !important;
+    background-repeat: no-repeat;
+    background-image: url(images/copy.svg);
+    width: 50px;
+    height: 46px;
+    /*top: 17.8px;
+    right: 15px;*/
+    background-position: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.copy:hover{
+    animation: copyforwards 0.2s forwards;
+}
+
+.copy:not(:hover) {
+    animation: copybackwards 0.2s forwards
+}
+
+@keyframes copyforwards {
+    from {background-color: #6098ff}
+    to {background-color: #4e8cff}
+}
+
+@keyframes copybackwards {
+    from {background-color: #4e8cff}
+    to {background-color: #6098ff}
+}
+
+.pip div {
+    position: relative;
+}
+
+
+.tt {
+    position: absolute;
+    font-size: 12px;
+    width: 60px;
+    top: 3px;
+    left: 60px;
+    background-color: #000000c5;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    display: block;
+    visibility: hidden;
+
+}
+
+
+.cs {
+    display: inline-block;
+    margin: 0 !important;
+    position: relative;
+    width: 50px;
+    top: 17.8px;
+}
+
+.copy1:hover .tooltiptext1 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy2:hover .tooltiptext2 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy3:hover .tooltiptext3 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy4:hover .tooltiptext4 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy5:hover .tooltiptext5 {
+    animation: ttanimf 0.2s forwards;
+}
+.copy6:hover .tooltiptext6 {
+    animation: ttanimf 0.2s forwards;
+}
+
+@keyframes ttanimf {
+    from {visibility: hidden; opacity: 0;}
+    to {visibility: visible; opacity: 1;}
+}
+
+.copy .tt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000000c5 transparent transparent;
+  }
+
+
+.modules {
+    padding-bottom: 60px;
+}
+
+.backgroundimage {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 40%;
+}
+
+.bottommargin {
+    padding: 100px 0 0 0;
+}
+
+.installtitle {
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.list {
+    padding: 15px;
+    width: 50%
+}
+
+.list li {
+    color: #808080;
+    font-size: 22px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.downloadarea {animation: animation1 0.5s ease-out forwards;}
+
+.requirements {    animation: animation1 0.8s ease-out forwards;}
+
+.listgithublink {font-weight: 500; }
+.listgithublink:hover {border-bottom: 3px solid #3198ff;}
+
+.tilebtn:hover {animation: tilebtnanimf 0.2s forwards;}
+.tilebtn:not(:hover) {animation: tilebtnanimb 0.2s forwards;}
+
+@keyframes tilebtnanimf {
+    from {background-color: none;}
+    to {background-color: rgba(0, 0, 0, 0.144);}
+}
+@keyframes tilebtnanimb {
+    from {background-color: rgba(0, 0, 0, 0.144);}
+    to {background-color: none;}
+}
+
+.image {
+    box-shadow: 3px 3px 30px 1px black;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+.learnmoresection1 {
+    text-align: center;
+}
+
+.circles {
+    display: inline-block;
+    margin: auto;
+    height: 50px;
+}
+.c {
+    margin: 20px 10px 75px 10px;
+    display: inline-block;
+    height: 10px;
+    background-color: #808080;
+    transition: background-color 1s ease-in-out;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.learnmoresection1 h1 {
+    color: white;
+    font-size: 62px;
+    font-weight: 500;
+    margin-top: 90px;
+}
+
+.imghover:hover {
+    animation: imghoveranim 1s forwards
+}
+
+.images {
+    position: relative;
+    height: 640px;
+    width: 1000px;
+    margin: auto;
+}
+
+.fadeout {animation: fadeout 1s forwards}
+@keyframes fadeout {
+    from {opacity: 1};
+    to {opacity: 0};
+}
+
+#img1 {
+    z-index: 5
+}
+
+.blacktitle {
+    text-align: center;
+    padding: 50px 0 10px 0;
+    font-size: 46px;
+    font-weight: 300;
+    margin: 0
+}
+
+.lmcontainer .tile {
+    display: inline-block;
+    width: 23%;
+    height: 290px;
+    border-radius: 15px;
+    background-color: #27282c;
+    margin: 0 33px 0 0 !important;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.575);
+    word-wrap: break-word;
+    position: relative;
+}
+.lmcontainer {
+    white-space: nowrap;
+    padding-bottom: 40px;
+}
+
+.hiwtile1 {background-image: url(images/lmtile1.png); background-size: 300px;}
+.hiwtile2 {background-image: url(images/lmtile2.png); background-size: 300px;}
+.hiwtile3 {background-image: url(images/lmtile3.png); background-size: 300px; }
+.hiwtile4 {background-image: url(images/lmtile4.png); background-size: 300px; }
+
+.wyntile1 {background-image: url(images/lmtile1.png); background-size: 300px;}
+.wyntile2 {background-image: url(images/lmtile2.png); background-size: 300px;}
+.wyntile3 {background-image: url(images/lmtile3.png); background-size: 300px; }
+.wyntile4 {background-image: url(images/lmtile4.png); background-size: 300px; }
+
+.howitworks .tile {
+    vertical-align: top;
+}
+
+.whatyouneed .tile {
+    vertical-align: top;
+}
+
+.tile h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 0 0 30px;
+    cursor: default
+}
+
+.tile:hover {animation: hovertile 0.1s forwards}
+.tile:not(:hover) {animation: nothovertile 0.1s forwards}
+
+.tiletext {
+    color: #808080;
+    font-weight: 500;
+    margin-left: 30px;
+    width: 80%;
+    white-space: normal;
+    cursor: default;
+}
+
+.circle {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 70px 0 0 0  !important;
+    background: radial-gradient(circle at 33px 33px, #7000c6, #000);
+    box-shadow: 3px 3px 10px 1px #0000008c;
+    animation: ball 10s infinite ease-in-out;
+    }
+
+.circleface {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(images/ballface.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    z-index: 5;
+}
+
+@keyframes ball {
+    50% {transform: translate(72em, 0) rotate(-50deg) scale(1.2); }
+    100% {transform: translate(0em, 0);}
+}
+
+
+.themetitle {
+    text-align: center;
+    padding: 70px 0 50px 0;
+    font-size: 46px;
+    font-weight: 300;
+    color: white
+}
+
+.theme {
+    position: absolute;
+    display: inline-block;
+    height: 538px;
+    width: 479px;
+    
+}
+
+.themeheight {
+    height: 850px
+}
+
+.themes{
+    position: relative;
+    width: 958px;
+    height: 538px;
+    margin: auto;
+    box-shadow: 3px 3px 30px 1px #0000009a;
+}
+.theme img {
+    position: absolute;
+    
+}
+
+.lighttheme img {
+    clip: rect(0px, 479px, 538px, 0px)
+}
+
+.darktheme img {
+    clip: rect(0px, 958px, 538px, 479px)
+}
+
+.darktheme {
+    width: 958px !important;
+    z-index: 1;
+    transition: 0.3s ease
+
+}
+
+.lighttheme {
+    z-index: 2;
+    transition: 0.3s ease
+}
+
+.lighttheme:hover {
+    transform: scale(1.02);
+}
+.darktheme:hover {
+    transform: scale(1.02);
+}
+
+b {
+    font-weight: 600;
+}
+
+.moretiles .t {
+    display: inline-block;
+    height: 300px;
+    width: 40%;
+    white-space: nowrap;
+    border-radius: 20px;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 10px 1px #0000006c;
+    cursor: default;
+    transition: 0.2s ease;
+}
+
+.t:hover {
+    transform: scale(1.01)
+}
+
+.moretiles {
+    position: relative;
+    margin: 0 !important;
+}
+
+.masktile2 {
+    background-image: url(images/masktile2.png);
+    
+}
+
+.masktile1 {
+    background-image: url(images/masktile1.png);
+}
+
+.t p {
+    white-space: normal;
+    width: 90%;
+    margin-left: 30px;
+    color: white;
+}
+
+.t h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.t1 {
+    margin: 0 0 0 70px !important;
+}
+
+.t2 {
+    float: right;
+    margin: 0 70px 0 0 !important;
+}
+
+.dualtile1 {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.dualtile2 {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.dualtitle {
+    margin: auto;
+    text-align: center;
+    padding: 70px 0 0 0;
+    font-weight: 500;
+    font-size: 52px;
+}
+
+.dualsubtitle {
+    text-align: center;
+    padding: 50px 0 0px 0;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1320px) {
+    .windex {
+        width: 60em
+    }
+    .pip {
+        width: 80%
+    }
+    .tiles .tile1 {
+        width: 48%
+    }
+    .sidetiles article {
+        width: 120%
+    }
+    .links article {
+        width: 23%;
+        margin-left: 9px;
+    }
+    .wget1 {
+        width: 60em
+    }
+    .wget2 {
+        width: 100%;
+    }
+    .wget3 {
+        width: 60em;
+    }
+    .wlearn1 {
+        width: 60em;
+    }
+    .learnmoresection1 .images {
+        width: 100%;
+    }
+    .learnmoresection1 .images img {
+        width: 100%;
+        height: 614px;
+    }
+    
+}

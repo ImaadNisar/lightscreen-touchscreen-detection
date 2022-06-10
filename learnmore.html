@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightscreen</title>
+</head>
+<body onload="slideshow()">
+    <div class="color1">
+    <div class="wlearn1 w width1">
+    <header>
+        <a href="index.html">
+        <div class="icon">
+            <img src="images/lightscreen.png" alt="Lightscreen" width="100px">
+        </div>
+        </a>
+        <nav class="navbar">
+            <a href="getlightscreen.html"><div class="topgitbtn">Get Lightscreen</div></a><!--
+            --><a href="https://github.com/ImaadNisar/Lightscreen-Touchscreen-Detection"><div class="topinstallbtn">Source Code</div></a><!--
+            --><a href="learnmore.html"><div class="toplearnmorebtn">Learn More</div></a><!--
+            --><a href="aboutme.html"><div class="aboutmebtn">About Me</div></a>
+        </nav>
+    </header>
+    <main>
+        <div class="color1">
+        <div class="wlearn1 w width1">
+        <div class="learnmoresection1">
+            <h1>Unlock touch for any monitor</h1>
+
+            <div class="images">
+                <img id="img1" class="image" src="images/learnmoreimg1.png" alt="" width="1000" height="640">
+                <img id="img2" class="image" src="images/learnmoreimg2.png" alt="" width="1000" height="640">
+                <img id="img3" class="image" src="images/learnmoreimg3.png" alt="" width="1000" height="640">
+            </div>
+
+
+            <div class="circles">
+                <div class="c" id="c1"></div><!--
+                --><div class="c" id="c2"></div><!--
+                --><div class="c" id="c3"></div>
+            </div>
+        </div>
+        </div>    
+        </div>
+
+        </div>
+        </div>
+
+        <div class="color2">
+        <div class="w width2">
+            <div class="howitworks lmcontainer" id="howitworks">
+                <h2 class="blacktitle">How it works</h2>
+                <div class="tile hiwtile1">
+                    <h3>Warp Perspective</h3>
+                    <p class="tiletext">Obtains the co-ordinates of the corners of the screen and warps the perspective of the recieving frames</p>
+                </div><!--
+                --><div class="tile hiwtile2">
+                    <h3>Generate Mask</h3>
+                    <p class="tiletext">Generates a mask to detect only the color of the stylus LED. Can be manually configured to work with any color stylus</p>
+                </div><!--
+                --><div class="tile hiwtile3">
+                    <h3>Track Stylus</h3>
+                    <p class="tiletext">Tracks the placement of the stylus using a combination of contour and brightest pixel detection. Camera exposure must be reduced for effective detection</p>
+                </div><!--
+                --><div class="tile hiwtile4">
+                    <h3>Control Cursor</h3>
+                    <p class="tiletext">Uses the co-ordinates obtained control the position of the cursor. Two modes for either dragging or drawing on the screen</p>
+                </div>
+            </div>
+            <div class="whatyouneed lmcontainer">
+                <h2 class="blacktitle" style="padding-top:0; margin-top:0">What you need</h2>
+                <div class="tile wyntile1">
+                    <h3>Lightscreen</h3>
+                    <p class="tiletext">Download the latest version of lightscreen and configure the settings for your screen</p>
+                </div><!--
+                --><div class="tile wyntile2">
+                    <h3>Webcam</h3>
+                    <p class="tiletext">A webcam is required for lightscreen to work. It should be facing towards the screen. The exposure must be ajustable</p>
+                </div><!--
+                --><div class="tile wyntile3">
+                    <h3>Controllable LED</h3>
+                    <p class="tiletext">A controllable LED is required. Alternatively, a laser can also be used if the mask is configured correctly. In testing, a blue LED controlled by a momentary switch was used</p>
+                </div><!--
+                --><div class="tile wyntile4">
+                    <h3>Screen</h3>
+                    <p class="tiletext">Uses the co-ordinates obtained control the position of the cursor. Two modes for either dragging or drawing on the screen</p>
+                </div>
+                <div class="circle"><span class="circleface"></span></div>
+            </div>
+        </div>
+        </div>
+        <div class="color1 themeheight">
+        <div class="w width1">
+            <h2 class="themetitle" id="themes">Pick a theme</h2>
+            <div class="themes">
+                <div class="theme lighttheme">
+                    <img src="images/lighttheme.png" alt="" width="958" height="538">
+                </div>
+                <div class="theme darktheme">
+                    <img src="images/darktheme.png" alt="" width="958" height="538">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="color2">
+        <div class="w width2">
+            <h1 class="dualtitle">Two ways to</h1>
+            <div class="createmask" id="createmask">
+                <h2 class="dualsubtitle">Create a mask</h2>
+                <div class="moretiles">
+                    <div class="t1 t masktile1">
+                        <h3>Automatic (Reccommended)</h3>
+                        <p>Automatic mask creation creates a mask compatible with blue LED styluses. It is the reccommended method of mask generation if using a blue LED.</p>
+                    </div>
+
+                    <div class="t2 t masktile2">
+                        <h3>Manual</h3>
+                        <p>Manual mask creation is only reccommended if using an LED color other than blue. In order to generate a working mask, you must first obtain the HSV (Hue, Saturation, Value) color value of the LED. This can be done using a online color picker tool. You must then change the upper and lower HSV bounds accordingly until only your LED shows in the mask</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dualmode" id="dualmode">
+                <h2 class="dualsubtitle">Control the cursor</h2>
+                <div class="moretiles">
+                    <div class="t1 t dualtile1">
+                        <h3>Dragging mode</h3>
+                        <p>This mode allows you to simulate the mouse drag input allowing you to relocate windows, close tabs, open programs and move files. To switch to dragging mode, hold the LED still for approximately 1 second, and the program will play and audible low pitched noise signalling the change</p>
+                    </div>
+                    <div class="t2 t dualtile2">
+                        <h3>Drawing mode</h3>
+                        <p>This mode allows you to use the LED to draw on a canvas. This mode works by keeping a track of the current and previous LED position and drawing a line between these points. This is done for every frame captured from the webcam and provides the ability to draw smooth curves simulating a real pen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </main>
+
+    
+
+    <footer>
+        <div class="icons">
+            <ul>
+                <a href="https://github.com/ImaadNisar" ><li><div class="github"><img src="images/github.png" alt="GitHub" width="48"></div></li></a><!--
+                --><a href="mailto: imaadnisar01@gmail.com"><li><div class="email"><img src="images/email.png" alt="Email" width="48"></div></li></a><!--
+                --><a href="https://www.linkedin.com/in/imaadnisar"><li><div class="linkdn"><img src="images/linkedin.png" alt="LinkedIn" width="48"></div></li></a>
+            </ul>
+        </div>
+        <div class="bottomtxt">
+            <p>Lightscreen by Imaad Nisar</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
