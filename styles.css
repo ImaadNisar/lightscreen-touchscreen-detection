@@ -48,7 +48,7 @@ header nav img {
 .navbar div {
     display: inline-block;
     position: relative;
-    padding: 25px 15px 25px 15px;
+    padding: 35px 15px 25px 15px;
     color: rgb(161, 161, 161);
     font-weight: 400;
     font-size: 18px;
@@ -430,7 +430,7 @@ a {
     display: inline-block;
 }
 
-.width2 div div:not(.btn) {
+.width2 div div:not(.cs) {
     margin: 0 0 0 70px;
 }
 
@@ -756,7 +756,7 @@ a {
     color: #808080;
     font-weight: 500;
     margin-left: 30px;
-    width: 80%;
+    width:80%;
     white-space: normal;
     cursor: default;
 }
@@ -785,7 +785,7 @@ a {
 }
 
 @keyframes ball {
-    50% {transform: translate(72em, 0) rotate(-50deg) scale(1.2); }
+    50% {transform: translate(67em, 0) rotate(-50deg) scale(1.2); }
     100% {transform: translate(0em, 0);}
 }
 
@@ -831,15 +831,15 @@ a {
 }
 
 .darktheme {
-    width: 958px !important;
+    width: 958px;
     z-index: 1;
-    transition: 0.3s ease
+    transition: 0.3s transform ease
 
 }
 
 .lighttheme {
     z-index: 2;
-    transition: 0.3s ease
+    transition: 0.3s transform ease
 }
 
 .lighttheme:hover {
@@ -858,12 +858,14 @@ b {
     height: 300px;
     width: 40%;
     white-space: nowrap;
-    border-radius: 20px;
+    border-radius: 5px;
     background-size: 101%;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 10px 1px #0000006c;
     cursor: default;
-    transition: 0.2s ease;
+    transition: 0.2s transform ease;
+    
+    vertical-align: top;
 }
 
 .t:hover {
@@ -900,27 +902,24 @@ b {
 }
 
 .t1 {
-    margin: 0 0 0 70px !important;
+    margin: 0 0 0 7.5% !important;
 }
 
-.t2 {
-    float: right;
-    margin: 0 70px 0 0 !important;
-}
 
 .dualtile1 {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-image: url(images/modetile1.png);
+
 }
 
 .dualtile2 {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-image: url(images/modetile2.png);
 }
 
 .dualtitle {
     margin: auto;
     text-align: center;
     padding: 70px 0 0 0;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 52px;
 }
 
@@ -967,5 +966,224 @@ b {
         width: 100%;
         height: 614px;
     }
-    
+    .wlearn2 {
+        width: 60em;
+    }
+    .lmcontainer .tile p{
+        font-size: 14px;
+        width: 75%;
+    }
+    .lmcontainer .tile h3{
+        font-size: 18px;
+    }
+    .lmcontainer .tile{
+        height: 300px;
+        margin-right: 25px !important;
+    }
+    @keyframes ball {
+        50% {
+            transform: translate(49em, 0) rotate(-50deg) scale(1.2);
+        }
+        
+        100% {
+            transform: translate(0em, 0);
+        }
+    }
+    .wlearn3 {
+        width: 60em
+    }
+    .wlearn4 {
+        width: 60em
+    }
+    .moretiles .t p{
+        font-size: 13px;
+    }
+    .moretiles .t{
+        width: 25em;
+        height: 240px;
+    }
+    .t1 {
+        margin: 0 0 0 5% !important;
+    }
 }
+
+@media screen and (max-width: 1050px) {
+    .windex {
+        width: 45em;
+    }
+    .tiles .tile1 {
+        width: 38.2em;
+        margin-bottom: 15px;
+        height: 460px
+    }
+    .titleanimation img {
+        width: 40em;
+        margin-bottom: 40px;
+    }
+    .intro p {
+        font-size: 18px;
+        margin-top: 0;
+        font-weight: 200;
+    }
+    .tiles .sidetiles {
+        width: 100%;
+        margin: 0;
+        height: 400px
+    }
+    .sidetiles article {
+        width: 258px;
+        margin: 0 0 0 10px;
+        height: 250px;
+    }
+    .anim2 a {
+        display: inline-block;
+    }
+    .anim3 a{
+        display: inline-block;
+    }
+    .sidetiles article h1 {
+        width: 200px
+    }
+    .tile1btn {
+        top: 80px;
+        left: 462px;
+        color: white;
+        border-color: white;;
+    }
+    .tile2btn {
+        top: 5px;
+        left: 120px
+    }
+    .tile3btn {
+        top: 30px;
+        left: 120px
+    }
+    .anim2 {display: inline-block; vertical-align: top;}
+    .anim3 {display: inline-block}
+    
+    .links article {
+        width: 50%;
+        vertical-align: top;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .wget1 {
+        width: 45em
+    }
+    .wget2 {
+        width: 45em
+    }
+    .wget2 div div:not(.cs) {
+        margin-left: 40px !important;
+    }
+    .pip {width: 70%}
+    .wget3 {width: 45em}
+    .installtitle {text-align: center;}
+    .list {width: 100%}
+
+    .backgroundimage {
+        background-size: 650px;
+        background-position: center;
+     }
+    .imagecover {
+        background-color: #27282c;
+        opacity: 0.9;
+    }
+
+     .list li {color: white}
+     .wlearn1 {width: 45em}
+     .wlearn2 {width: 589px}
+     .learnmoresection1 .images img {
+        height: 460px
+     }
+     .learnmoresection1 h1 {
+        font-size: 46px;
+        margin-top: 50px;
+     }
+     .images {height: 460px}
+     
+     .blacktitle {padding-bottom: 30px;}
+     .divider {
+        display: block !important;
+        height: 20px;
+     }
+     .lmtiles {width:600px; margin: auto !important;}
+     .lmcontainer .tile {
+        width: 47%
+     }
+     @keyframes ball {
+        50% {
+            transform: translate(30em, 0) rotate(-50deg) scale(1.2);
+        }
+        
+        100% {
+            transform: translate(0em, 0);
+        }
+     }
+     .themeheight {height: 700px}
+
+     .wlearn3 {width: 45em}
+
+     .themes {width: 100%; box-shadow: none; height: 400px}
+
+     .theme {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 158px;
+        opacity: 0.5;
+        transition-property: opacity, transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        cursor: default;
+        box-shadow: 3px 3px 10px 1px #101113;
+     }
+
+     .theme img {
+        clip: rect(0px, 958px, 158px, 0px);
+        width: 100% !important;
+        height: 400px;
+        
+     }
+
+     .theme:hover {
+        opacity: 1;
+        transform: scale(1.01);
+     }
+     .lighttheme {
+        margin-bottom: 30px;
+     }
+     .ttl {color:black}
+     .ttd {color: white}
+
+     .themetext {
+        display: inline !important;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        vertical-align: middle;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+     }
+     .t {
+        margin: 0!important;;
+     }
+     .wlearn4 {width: 45em}
+     .moretiles {width: 400px; margin: auto !important;}
+}
+.divider {
+    display: none;
+}
+.themetext {
+    display: none;
+}
+
+
+@media screen and (max-width:790px) {
+
+
+}
+
