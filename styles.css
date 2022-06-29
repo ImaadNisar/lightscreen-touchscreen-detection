@@ -1187,3 +1187,8 @@ b {
 
 }
 
+.embeded {
+    padding: 0 0 70px 0;
+    display: block;
+    margin: 30px auto;
+}
